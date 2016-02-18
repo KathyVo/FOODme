@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html>
-	<head>
+<head>
 
-		<link rel = "stylesheet" href = "css/rate.css">
-		<!--for three emojis in rating-->
-		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
   <link type = "text/css" rel="stylesheet" href="css/style.css">
-  <link type = "text/css" rel="stylesheet" href="css/bookmarks.css">
   <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
-  <link type = "text/css" rel="stylesheet" href="css/explore.css">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/explore.js"></script>
-  <script type="text/javascript" src="js/rate.js"></script>
+  <script type="text/javascript" src="js/upload.js"></script>
 
   <title>FOODme</title>
-	</head>
-	
-	<body>
+</head>
 
-		<nav class="navbar navbar-inverse">
+  <body>
+
+    <!-- Menu Bar -->
+    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -57,39 +54,24 @@
           </ul>
         </div>
       </div>
-    </nav> <!--end of menu-->
-		<form>
-			<h4>Dish Rating for: </h4>
-				<h5 id = "dname"></h5> 
-				<h5 id = 'drest'></h5>
-				<p>This dish made me feel...</p>
-			<!--reaction to dishes-->
-			<div class = "emoji">
-				<i class = "em em-disappointed" id = "ab"></i>
-				Disappointed
-			</div>
-			<div class = 'emoji'>
-				<i class = "em em-confused" id = "ab"></i>
-				Meh
-			</div>
-			<div class = 'emoji'>
-				<i class = "em em-smiley" id = "ab"></i>
-				Happy
-			</div>
-			<!--hashtag ratings-->
-			<div id = "up_tags">
-				<p>UPS: list three good things about this dish, separate each using a common</p> <i>example: #awesome, #yummy</i>
-				<input type = "text" id = "ui"></input>
-			</div>
-			<div id = "down_tags">
-				<p>DOWNS: list three bad things about this dish, separate each using a common</p> <i>example: #disgusting, #spicy</i>
-				<input type = "text" id = "di"></input>
-			</div>
+    </nav>
 
-			<div id = "submit">
-				<a href = '/'><button id = "submitBtn">SUBMIT</button></a>
-			</div>
-			
-		</form>
-	</body>
+   <div id = "container">
+    <form action="/exp">
+      <h2>Upload Dish</h2>
+          <input type="text" name="dish" placeholder="Dish Name" id = "name">
+          <input type="text" name="restaurant" placeholder="Restaurant" id = "restaurant">
+          <input type="text" name="location" placeholder= "Address" id = "address">
+          <input type="text" name="hashtags" placeholder= "Hashtags" id = "tags">
+      <!--taking picture-->
+      <h4>Picture</h4>
+          <input type="file" id = "{{imgURL}}"accept="image/*" capture id>
+          <button id = "upBtn">SUBMIT</button>
+        </form>
+
+		
+
+	</div> <!--end of container-->
+
+  </body>
 </html>

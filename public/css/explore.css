@@ -18,16 +18,26 @@
 	border: none;
 	color: white;
 	font-style: bold;
+	font-size: 25px;
 }
 
 #book_button { 
-	height: 75px;
-	width: 100px;
+	height: 100px;
+	width: 150px;
 	background-color: white;
 	color: tomato;
-	font-size: 18px;
 	text-align: center;
 	border: 1px solid tomato;
+}
+
+#bmkIcon { 
+	height: 80px;
+	width: 80px;
+}
+#ab { 
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
 }
 
 #end { 
@@ -38,6 +48,7 @@
 #faces div { 
 	display: inline-block;
 	margin-right: 10px;
+	font-size: 25px;
 }
 
 #ht_type div { 
@@ -47,6 +58,7 @@
 
 #hashtags div { 
 	margin-right: 1px;
+	font-size: 20px;
 }
 
 .ups div { 
@@ -55,11 +67,15 @@
 
 }
 
-
-
 #dish_img { 
-	height: 200px;
-	width: 200px;
+	height: 400px;
+	width: 400px;
+	margin-top: 10px;
+}
+
+#dishIMG { 
+	height: 400px;
+	width: 400px;
 	margin-top: 10px;
 }
 
