@@ -80,7 +80,11 @@
         </div>
     </div>
     <div id = "myDishes">
-
+       {{#each dishes}}
+          <div id = "{{dishName}}">
+            <img src = "../{{imgURL}}">
+          </div>
+          {{/each}}
     </div>
 
    

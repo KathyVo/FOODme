@@ -1,4 +1,5 @@
 var friends; //store json data
+var fDishes;
 var top;
 var prof = 0;
 var getF;
@@ -11,14 +12,19 @@ $(document).ready(function() {
 
 	$.get('/getFriends', function(data) { 
 		friends = data.friends;
-		top = data;
-		console.log(top[1]); //check that it receives it 
+		top = data.tops;
+		//console.log(top[1]); //check that it receives it 
 		console.log(friends.length);
 		//set retrieval if/else statement
 		getF = localStorage.getItem('get');
 		//check whether to open friend or top person
 		getFriend();
 		getTop();
+	})
+
+	$.getJSON('/getDishes', function(data) { 
+		fDishes = data.dishes;
+		console.log(fDishes[1]);
 	})
 
 

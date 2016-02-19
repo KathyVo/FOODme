@@ -62,6 +62,7 @@ app.post('/addExplore', upload.addExplore)
 app.get('/addExplore', upload.getExplore)
 app.get('/frprof', friends.viewFriend)
 app.get('/getFriends', friends.getFriends)
+app.get('/getDishes', friends.getDishes)
 // Example route
 // app.get('/users', user.list);
 
