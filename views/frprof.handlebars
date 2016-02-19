@@ -8,13 +8,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <link type = "text/css" rel="stylesheet" href="css/style.css">
-  <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
   <link type = "text/css" rel="stylesheet" href="css/friends.css">
+  <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/friends.js"></script>
-  
+  <script type="text/javascript" src="../js/fblogin.js"></script>
+  <script type="text/javascript" src="../js/friends.js"></script>
+
 
   <title>FOODme</title>
 </head>
@@ -39,30 +41,18 @@
        }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <!--
-    <nav class="navbar navbar-inverse navbar-fixed-bottom">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <li><a href="/exp"><span class="glyphicon glyphicon-globe"></span>&nbsp;<p>Explore</p></a></li>
-          <li><a href="/profile" class="dropdown-item"><span class="glyphicon glyphicon-user"></span>&nbsp;<p>My Info</p></a></li>
-          <li><a href="/bookmarks" class="dropdown-item"><span class="glyphicon glyphicon-bookmark"></span>&nbsp;<p>Bookmarks</p></a></li>
-          <li><a href="#" class="dropdown-item"><i class="fa fa-users"></i>&nbsp;<p>Friends</p></a></li>
-          <li><a href="#" class="dropdown-item"><span class="glyphicon glyphicon-cog"></span>&nbsp;<p>Settings</p></a></li>
-        </ul>
-      </div>
-    </nav>
-  -->
-
+    <!-- Menu Bar -->
     <div id="footer">
       <div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
         <div class="row" id="bottomNav">
           <div class="col-xs-3 text-center"><a href="/exp"><i class="glyphicon glyphicon-globe"></i><br><p>Explore</p></a></div>
           <div class="col-xs-3 text-center"><a href="/bookmarks"><i class="glyphicon glyphicon-bookmark"></i><br><p>Bookmarks</p></a></div>
-          <div class="col-xs-3 text-center"><a href="#"><i class="fa fa-users"></i><br><p>Friends</p></a></div>
+          <div class="col-xs-3 text-center"><a href="/friends"><i class="fa fa-users"></i><br><p>Friends</p></a></div>
           <div class="col-xs-3 text-center"><a href="/profile"><i class="glyphicon glyphicon-user"></i><br><p>Profile</p></a></div>
         </div>
       </div>
     </div>
+
 
     <!-- Menu Bar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -76,38 +66,23 @@
             </script>
           <a class="navbar-brand" href="/exp">FOODme</a>
 
-          <!--<a href="/" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>-->
-
-          <a href="/upload" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
+          <a href="/" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
         </div>
       </div>
     </nav>
 
-   <div id = "container">
+    <h2 id = 'profName'>{{name}}</h2>
+    <div id = "info">
+      <img src = "../{{img}}" id = "pIcon"/>
+        <div>
+          <h5>San Diego, CA</h5>
+          <h5 id = "title">{{title}}</h5>
+        </div>
+    </div>
+    <div id = "myDishes">
 
-        <div id = "chart" class = "table">
-          <h3>Friends</h3>
-          {{#each friends}}
-            <div class ="friend" id="{{name}}">
-              <p class = "rank">{{rank}}</p>
-              <img src="../{{img}}"/>
-              <p class = "name">{{name}}</p>
-            </div>
-          {{/each}}
-        </div> <!--end of chart div-->
+    </div>
 
-        <div id = "cityTop" class = "table">
-          <h3>Top Foodies in SD</h3>
-          {{#each friends}}
-            <div class ="friend" id="{{name}}">
-              <p class = "rank">{{rank}}</p>
-              <img src="../{{img}}"/>
-              <p class = "name">{{name}}</p>
-            </div>
-          {{/each}}
-        </div> <!--end of chart div-->
-
-	</div> <!--end of container-->
-
+   
   </body>
 </html>

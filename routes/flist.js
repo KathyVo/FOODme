@@ -7,7 +7,17 @@ exports.view = function(req, res) {
 
 }
 
+exports.viewFriend = function(req, res) {
+	console.log("Friends page testing...")
+	res.render('frprof', data);
+	console.log(data);
+	console.log('SUCCESS VIEW FIRNED!');
+
+}
+
 exports.getFriends = function (req, res) {
 	res.json(data);	
+	console.log(data.friends[0]);
+
 
 };

@@ -1,8 +1,12 @@
 /*left and right buttons */
-#swipe { 
+#swipe > div { 
 	display: inline-block;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin: auto;
+}
+
+#swipe { 
+	margin-top: 70px;
+	text-align: center;
 }
 
 #bmk_confirm { 
@@ -12,13 +16,15 @@
 }
 
 .move { 
-	height: 50px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 	background-color: tomato;
 	border: none;
 	color: white;
 	font-style: bold;
-	font-size: 25px;
+	font-size: 15px;
+
+
 }
 
 #book_button { 
@@ -64,12 +70,14 @@
 .ups div { 
 	display: inline-block;
 	color: black;
+	margin: auto;
+	text-align: center;
 
 }
 
 #dish_img { 
-	height: 400px;
-	width: 400px;
+	height: 350px;
+	width: 200px;
 	margin-top: 10px;
 }
 

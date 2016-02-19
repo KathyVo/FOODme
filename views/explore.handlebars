@@ -77,7 +77,7 @@
           <a class="navbar-brand" href="/exp">FOODme</a>
 
           <!--<a href="/" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>-->
-          <a onClick="logOut();" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>
+         
           <a href="/upload" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
         </div>
       </div>
@@ -92,20 +92,20 @@
 			<button id = "spin">Explore the Crave</button>-->
       <div id = "container">
 
-      <form action="/search.html" class="search-wrapper cf">
-        <input type="text" placeholder="Search for food here..." required="">
-        <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
-      </form>
-      <div class = "item">
-        <a href="/item"><img src = '/item' id = "dish_img"/></a>
-        <p id = "dish_id">Click the dish for more info</p>
-      </div>
-
       <div id = "swipe">
+         <div class = "move" id = "prev"> << </div>
+        <div class = "item">
+          <a href="/item"><img src = '/item' id = "dish_img"/></a>
+          <p id = "dish_id">Click the dish for more info</p>
+        </div>
+         <div class = "move" id = "next"> >> </div>
+     </div>
+
+      <!--<div id = "swipe">
         <button class = "move" id = "prev"> << </button>
         <a href = "#bmk_confirm" id = "bmk" data-rel = "popup"><button id = "book_button"><i class="glyphicon glyphicon-bookmark"></i><p></button></a>
         <button class = "move" id = "next"> >> </button>
-      </div>
+      </div>-->
 
 	</div> <!--end of container-->
 

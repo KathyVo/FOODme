@@ -13,6 +13,7 @@ $(document).ready(function() {
     id = parseInt(r);
     console.log("r = " + r);
     //get json array data
+
     $.get('/addExplore', function(data) {
         dishes = data;
         console.log("getJSON activated!");
@@ -22,7 +23,7 @@ $(document).ready(function() {
         console.log(curr);
         var name = curr.dishName;
         console.log("name variable testing..." + name);
-        var im = "../" + curr.imgURL;
+        var im = curr.imgURL;
         console.log("Image is..." + im);
         $('#dish_img').attr('src', im);
         console.log(dishes.dishes.length); 
@@ -82,7 +83,7 @@ $(document).ready(function() {
 
 function loadDishReview()  { 
     //set image
-    var img = "../" + curr.imgURL; 
+    var img = curr.imgURL; 
     console.log(img);
     $('#dishIMG').attr('src', img);
     $('#dis').text(curr.dis);

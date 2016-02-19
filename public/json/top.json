@@ -1,0 +1,35 @@
+{
+	"top": [
+
+		{
+			"name": "Beyonce", 
+			"city": "San Diego, CA", 
+			"img": "friends/beyonce.jpg",
+			"title": "Foodie Goddess", 
+			"rank": "1"
+		}, 
+
+		{
+			"name": "Jay Z", 
+			"city": "San Diego, CA", 
+			"img": "friends/jayz.jpg",
+			"title": "Master Foodie", 
+			"rank": "2"
+		},
+		{
+			"name": "Blue Ivy", 
+			"city": "San Diego, CA", 
+			"img": "friends/blueivy.jpg",
+			"title": "Master Foodie", 
+			"rank": "3"
+		},
+		{
+			"name": "Kanye West", 
+			"city": "San Diego, CA", 
+			"img": "friends/kanye.jpg",
+			"title": "Master Foodie", 
+			"rank": "4"
+		}
+
+	]
+}

@@ -24,27 +24,21 @@ $(document).ready(function() {
 
 	$('#upBtn').click(function() { 
 		console.log('Submit Clicked!');
-		/*var tags = $('#address').val();
-		var array = new Array();
-		array = tags.split(',');
-		console.log(array);*/
+		var tags = $('#tags').val();
+		var ups = new Array(); 
+		ups = tags.split(',');
+		alert(ups[0] + "and " + ups[1] + "and " + ups[2]);
 		
 		$.post('/addExplore', { 
 				'dishName': $('#name').val(),
 				'restaurantName': $('#restaurant').val(),
 				'address': $('#address').val(),
-				'imgURL': 'http://lorempixel.com/400/400/food/' 
+				'imgURL': 'http://lorempixel.com/400/400/food/',
+				'ul': ups[0], 
+				'u2': ups[1], 
+				'u3': ups[2], 
 		
 		}, function (res) {});
-
-		
-
-		 
-	/*console.log(newDish);
-	console.log(dishes.dishes.length);
-	dishes['dishes'].push(newDish); 
-	max = dishes.dishes.length;
-	console.log(dishes.dishes[max - 1]);*/
 
 	})
 })

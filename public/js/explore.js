@@ -26,7 +26,7 @@ $(document).ready(function() {
         console.log(curr);
         var name = curr.dishName;
         console.log("name variable testing..." + name);
-        var im = "../" + curr.imgURL;
+        var im = curr.imgURL;
         console.log("Image is..." + im);
         $('#dish_img').attr('src', im);
         console.log(dishes.dishes.length); 
