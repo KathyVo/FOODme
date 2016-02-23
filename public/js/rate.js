@@ -24,7 +24,7 @@ $(document).ready(function() {
         var name = curr.dishName;
         console.log("name variable testing..." + name);
         var im = curr.imgURL;
-        console.log("Image is..." + im);
+        console.log("Image is " + im);
         $('#dish_img').attr('src', im);
         console.log(dishes.dishes.length); 
         loadDishReview();

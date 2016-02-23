@@ -10,6 +10,7 @@
     var ups = false;
     var downs = false;
     var complete = false;
+    var dlength = 0;
 
 $(document).ready(function() {
 
@@ -29,31 +30,45 @@ $(document).ready(function() {
         var im = curr.imgURL;
         console.log("Image is..." + im);
         $('#dish_img').attr('src', im);
-        console.log(dishes.dishes.length); 
-});
+        dlength = dishes.dishes.length;
+        console.log(dlength); 
+}); 
 
     //move to next dish image
     $('#next').click(function() {
-      //change current dish number
-      i = i+1;
-      console.log(i);
-      curr = dishes.dishes[i];
 
-      console.log(curr);
-      var im = curr.imgURL;
-      $('#dish_img').attr('src', im);
-      console.log(dishes.length);
+      //check if it exeeds number of dishes
+      if (i < dlength -1) {
+        i = i+1;
+        console.log(i);
+        curr = dishes.dishes[i];
+
+        console.log(curr);
+        var im = curr.imgURL;
+        $('#dish_img').attr('src', im);
+
+      }
+      else { 
+        alert("no more dishes! go back!");
+      }
+      
     });
 
     $('#prev').click(function() {
-      i = i-1;
-      console.log(i);
-      curr = dishes.dishes[i];
+      if (i > 1) { 
+        i = i-1;
+        console.log(i);
+        curr = dishes.dishes[i];
 
-      console.log(curr);
-      var im = curr.imgURL;
-      $('#dish_img').attr('src', im);
-      console.log(dishes.length);
+        console.log(curr);
+        var im = curr.imgURL;
+        $('#dish_img').attr('src', im);
+        console.log(dishes.length);
+      }
+      else { 
+        alert('go forward!');
+      }
+      
     });
 
     $('#dish_img').click(function() {

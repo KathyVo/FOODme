@@ -12,9 +12,6 @@ exports.view = function(req, res) {
 exports.getFriends = function (req, res) {
 	console.log('get Friends testing...');
 	res.json(data);
-	console.log(dish);	
-	res.json(dish);
-	console.log('dish oading...');
 	res.render('frprof', data);
 
 };

@@ -1,0 +1,139 @@
+Let’s take a look at the atoms of visual design: letterforms.
+This is the letter R, typeset in Gill Sans.
+Gill Sans was designed by Eric Gill and released in 1928.
+There’s a couple of things that I’d like to point out about this letter right here:
+One of them is that it has the perceptual characteristic of consistent weight all throughout;
+however, the actual thickness of the letter varies considerably over different parts.
+So, if you look at some points of the letter, like the bottom,
+you can see that they are much thicker than at other points in the letter.
+And what you see in these atoms is exactly what you’ll see throughout the entirety of graphic design,
+which is that we’re going for something that feels perceptually balanced —
+or may have perceptual uniformity — when the actuality may be quite different.
+This letter was also my very first assignment as a graphic design student at the Rhode Island School of Design:
+We had to draw this letter, one foot high, in black paint, on a white background.
+It may seem like a silly exercise,
+but it’s a great way to understand intimately the curves and strokes of the letterform,
+and it’s also really good at training both your eye and training your hand;
+Maybe it’s also a hazing ritual that I’ve just post-hoc rationalized.
+Anyhow, moving along, let’s look at the different parts of a typeface.
+One term you may be familiar with from using on your computer is the point size or the font size.
+And what’s notable about this is
+it seems like a number that ought to be set in stone and consistent across all typefaces,
+but it’s really not.
+Most of our terminology from typefaces comes from when they were set in lead,
+and the point size of a typeface really just means the height of the lead block that the type was set in,
+which has some relationship to the actual letter size, but is not completely consistent.
+For example, you can see, for the same point size,
+here’s a letter S in Gill Sans, and a letter S in Calibri,
+and you can that the Calibri S is lower than the Gill Sans S.
+Our second term is leading.
+If we have solid blocks of lead type that form the letters,
+the spacing that we get between the lines was achieved by  putting thin strips of lead in between the lines,
+and that was called the leading.
+It’s customary to have 20% of your font size as your leading;
+and so, if in your word processor you’ve set 10-point type,
+it will usually automatically add an extra 2 points of spacing to put 12 points in between each line.
+The height of the lowercase letters is called the x-height, from the “x”.
+Some typefaces have a higher x-height, like Lucida Bright or Georgia;
+other typefaces have a lower x-height, like Baskerville.
+And this is important for design — especially online —
+because typefaces that have a higher x-height will be easier to read at smaller point sizes
+and on low resolution devices like most screens.
+Conversely, typefaces with a low x-height, like Baskerville,
+are used when you’re trying to give elegance, or a “Belle Époque” feel to something.
+And sprouting up and dropping down from the x-height
+are the ascenders — like the top stem of the h and the dot of the i —,
+and your descenders — like the y, p, g.
+In general, a typeface that has a low x-height will tend to have long ascenders and descenders,
+and a typeface that has a tall x-height will tend to have more squashed ascenders and descenders.
+Typefaces can also vary in their weight.
+So here have an example of light on the left, regular or roman in the middle, and bold on the right.
+Sometimes you’ll see weights in between like demibold or semibold,
+and, even to the further to the right of bold, you’ll see black.
+Number six on the list are serifs.
+Serifs are the doohickeys on the end of letters that give them that chiselled look.
+[There are] a couple more that are bonus:
+Some faces (typefaces) will also include small caps — which sure are exactly what they sound like,
+smaller versions of capital[s and] numbers.
+These can be used as headers, or they can also be used
+to put acronyms and other capital texts inside a block of body text.
+And one thing that you may not know is —
+just like letters come in uppercase and lowercase, numbers do too.
+These numbers, set in Neutraface,
+provide an example of something that has just small ascenders and descenders;
+in some cases these can be more dramatic.
+Lowercase numbers are useful
+when you want numbers to fit in with a larger block of text and not stand out.
+One of the most common questions I get asked about graphic design is:
+“Which typeface should I use?”
+And a lot of people have heard a story
+where serif typefaces are generally recommended for body text
+and sans serif typefaces are recommended for headers.
+And that’s, on the whole, not bad advice.
+There is an often-repeated claim that the reason that this is a good heuristic
+is because serif typefaces, with those doohickeys at the end,
+give your eyes something to latch onto, and consequently they’re easier to read.
+It’s an interesting hypothesis.
+So I looked into this a little bit for all of you,
+and there’s some challenges in trying to figure this out.
+For starters, individual differences in readers dwarf any manipulation effects of the typeface —
+like, some people read a whole lot faster than others,
+and so it’s difficult to measure differences in the readability of typefaces.
+Also, reading requires familiarity:
+It’s not like we’re born knowing what a letter R looks like; we need to practice.
+And so if you learn with one style of the letter R, you’ll probably be faster with that one;
+and if you learn with another style of the letter R, you’ll be faster with that one.
+If even when we got past all those challenges,
+it can be a little bit difficult to figure out exactly how you should measure  this.
+Well, I can’t go so far as to say that the serif hypothesis is definitively untrue;
+what I can say is that there’s a lot of evidence to support that it actually is real.
+And Alex Poole does a great job of describing this on his web site:
+He writes that “What initially seemed a neat dichotomous question of serif versus sans serif
+has resulted in a body of research consisting of weak claims and counter-claims,
+and study after study with findings of ‘no difference’.
+Is it the case that more than one hundred years of research has been marred by [repeated] methodological flaws,
+or are serifs simply a typographical ‘red herring’?”
+It does seem that mixed-case type like you get in a sentence — upper and lower mixed together —
+is faster to read than all caps, presumably because
+you get greater vertical variation with the ascenders and descenders in lowercase letters,
+and that gives your eye more information as it’s reading.
+Also, in general, proportional fonts seem to be faster than monospaced fonts, like a typewriter.
+So, typewriter font[s] — slower to read — [but] that stuff only matters if you have to read a whole lot.
+But the simplest summary is that, in practice, legibility simply amounts to what you’re accustomed to.
+What do these words say? The bottom half is obscured.
+As many of you guessed, “I am a jelly donut”.
+How about this one here? Here the top half is obscured.
+Seems a little harder?
+“jfk spoke in berlin.”
+Turns out that more information seems to be encoded in the top half of texts than in the bottom half.
+And what does this say?
+[I] bet many of you saw it as “THE CAT”,
+and fewer people, “TAE CHT”.
+And that’s because expectation plays a really important role in what we read.
+And if you’re really perceptive,
+you may have realized that those two middle letters are actually exactly the same letter,
+so the only difference is what you’re expecting to see in each case.
+Your prior probability influences your interpretation.
+So, if you put all that together and return to our original question of “Which typeface should I use”,
+the answer is “It depends.”
+If you’re putting down a long block of text,
+it’s best to use a typeface that many people will be familiar with;
+and if you’re working online, use something that has a relatively high x-height.
+On the other hand, if you’re making a logo or a sign,
+or something that’s short and intended to be dramatic,
+then you probably want to use something a little bit funkier as your typeface —
+something that’s going to catch attention and be unique, memorable.
+And typefaces — like everything in life — [build] up reputation.
+So, over time, certain typefaces come to mean certain things.
+And here’s a great example from Hoefler and Frere-Jones, writing on their blog.
+They talk about how Baskerville seems like it’s out of a literary magazine
+and Optima seems to remind us of cheap 1950’s hygiene products.
+Here are two easy exercises you can use to improve your typographical eye:
+The first one is: Look around you for all of the different ways that the same typeface gets deployed;
+that will give you a sense of its range.
+And the second one is: Look at how the same text, with different typefaces, really changes its meaning.
+In this class we have a lot of ground to cover quickly,
+and so unfortunately we can’t spend too much time on typography;
+but it’s a fascinating subject, and if you’d like to learn more about this,
+there are many great books and design resources online, and they’re growing rapidly.
+Here are just a few that I think are particularly good.

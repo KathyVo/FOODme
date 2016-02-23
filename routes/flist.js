@@ -9,21 +9,19 @@ exports.view = function(req, res) {
 }
 
 exports.viewFriend = function(req, res) {
-	console.log("Friends page testing...")
-	res.render('frprof', data);
+	console.log("Friends page testing...");
 	console.log('SUCCESS VIEW FIRNED!');
+	console.log(dish);
+		res.render('frprof', data);
 
+}
+
+exports.getFriends = function(req, res) { 
+	console.log(data);
+	res.json(data);
 }
 
 exports.getDishes = function(req, res) { 
-	console.log("dish rendering...");
+	console.log(dish);
 	res.json(dish);
 }
-
-exports.getFriends = function (req, res) {
-	res.json(data);	
-	res.json(dish);
-	console.log(data.friends[0]);
-
-
-};

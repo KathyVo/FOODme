@@ -19,14 +19,19 @@ $(document).ready(function() {
 		getF = localStorage.getItem('get');
 		//check whether to open friend or top person
 		getFriend();
-		getTop();
-	})
 
-	$.getJSON('/getDishes', function(data) { 
-		fDishes = data.dishes;
-		console.log(fDishes[1]);
 	})
+	$.get('/getDishes', function(data) { 
+		fDishes = data; 
+		console.log(fDishes);
+		fd1 = fDishes.dishes[0].imgURL;
+		fd2 = fDishes.dishes[1].imgURL;
+		fd3 = fDishes.dishes[2].imgURL;
+		$('#0').attr('src', fd1);
+		$('#1').attr('src', fd2);
+		$('#2').attr('src', fd3);
 
+	})
 
 	$('.friend').click(function() { 
 		var name = $(this).attr('id');
@@ -37,14 +42,12 @@ $(document).ready(function() {
 
 	})
 
-	$('.top').click(function() { 
-		var name = $(this).attr('id');
-		console.log(name);
-		localStorage.setItem('top', name);
-		localStorage.setItem('get', false);
-		window.location.href = '/frprof';
-
+	//when you click on friend's top dishes, it should take you to the item review page
+	$('#myDishes img').click(function() { 
+		localStorage.setItem('rate', event.target.id);
+		window.location.href = '/item';
 	})
+	
 			//getFriend();
 })
 
@@ -67,20 +70,4 @@ function getFriend() {
 	$('#pIcon').attr('src', person.img);
 }
 
-function getTop() { 
-	var t = localStorage.getItem('top'); 
-	var id = 0; 
-	console.log(top[1]);
-	for (var i = 0; i < top.length; i++) { 
-		if(top[i].name == t) { 
-			id = i; 
-			console.log(prof + " " + t);
-		}
-	}
-	var person = top[id];
-	console.log(person); 
-	//$('#profName').text(person.name);
-	$('#title').text(person.title);
-	$('#pIcon').attr('src', person.img);
-}
 
