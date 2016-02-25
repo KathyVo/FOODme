@@ -98,7 +98,9 @@ function loadDishReview()  {
     $('#d2').text(curr.d2);
     $('#d3').text(curr.d3);
     $('#dish_name').text(curr.dishName);
-    $('#restaurant').text(curr.restaurantName);
+    $('#restaurantName').text(curr.restaurantName);
+    $('#address').text(curr.address);
+    console.log(curr.address);
 }
 
 

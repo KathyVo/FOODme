@@ -22,8 +22,9 @@ exports.addExplore = function(req, res) {
 			'd1': 'blah blah blah'
 		};
 
+	data.dishes[0] = addDish;
 	console.log(addDish);
-	data['dishes'].push(addDish);
+	//data['dishes'].push(addDish);
 	console.log(data);
 	// res.render('explore', data);
 };

@@ -22,5 +22,5 @@ exports.view = function(req, res) { 
       break;
   }
 
-  res.render('updatedDish', data.dishes[0]);
+  res.render('item', data.dishes[0]);
 }

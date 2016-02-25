@@ -6,6 +6,7 @@
 			"dishName": "burger",
 			"restaurantName": "Burger Lounge",
 			"imgURL": "../food/burger.jpg",
+			"address": "San Diego, CA",
 			"dis": "6",
 			"meh": "5",
 			"yay": "12",

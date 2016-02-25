@@ -1,5 +1,5 @@
 #ab { 
-	width: 50px;
+	width: 40px;
 	height: 40px;
 	opacity: 0.5;
 }
@@ -22,4 +22,12 @@
 
 form { 
 	text-align: center;
+}
+
+#ui{
+	border-radius: 3px;
+}
+
+#di{
+	border-radius: 3px;
 }
