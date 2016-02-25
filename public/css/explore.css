@@ -5,7 +5,7 @@
 }
 
 #swipe { 
-	margin-top: 70px;
+	margin-top: 60px;
 	text-align: center;
 	margin-bottom: 0px;
 }
@@ -27,17 +27,18 @@
 	color: white;
 	font-size: 60px;
 	background-color: tomato;
-	bottom: 40%;
+	top: 50%;
 }
 
 #book_button { 
-	height: 50px;
-	width: 250px;
-	background-color: white;
-	color: tomato;
+	height: 40px;
+	width: 200px;
+	background-color: tomato;
+	color: white;
 	font-size: 25px;
 	text-align: center;
 	border: 1px solid tomato;
+	margin-top: 5px;
 }
 
 #bmkIcon { 
@@ -45,8 +46,8 @@
 	width: 80px;
 }
 #ab { 
-	height: 50px;
-	width: 50px;
+	height: 30px;
+	width: 30px;
 	margin-right: 10px;
 }
 
@@ -58,7 +59,7 @@
 #faces div { 
 	display: inline-block;
 	margin-right: 10px;
-	font-size: 25px;
+	font-size: 12px;
 }
 
 #ht_type div { 
@@ -68,7 +69,7 @@
 
 #hashtags div { 
 	margin-right: 1px;
-	font-size: 20px;
+	font-size: 12px;
 }
 
 .ups div { 
@@ -80,8 +81,8 @@
 }
 
 #dish_img { 
-	height: 350px;
-	width: 250px;
+	height: 300px;
+	width: 200px;
 	margin-top: 10px;
 }
 
@@ -98,8 +99,8 @@
 }
 
 #dishIMG { 
-	height: 250px;
-	width: 250px;
+	height: 200px;
+	width: 200px;
 }
 
 .thumbs { 

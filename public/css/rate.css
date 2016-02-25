@@ -1,11 +1,15 @@
 #ab { 
-	width: 40px;
+	width: 50px;
 	height: 40px;
 	opacity: 0.5;
 }
 
 .emoji { 
 	display: inline-block;
+}
+
+.emoji-radio { 
+	display: none;
 }
 
 #ab:hover { 
