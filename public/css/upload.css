@@ -1,0 +1,14 @@
+#container { 
+	margin-top: 50px;
+}
+
+#exDish { 
+	height: 75px;
+	width: 75px;
+	visibility: hidden;
+}
+
+button { 
+	display: inline;
+	margin-top: 2px;
+}
