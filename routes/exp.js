@@ -19,3 +19,7 @@ exports.addBkmk = function(req, res) { 
 	console.log(newBookmark.description);
 	data["bookmarks"].push(newBookmark);
  }
+
+exports.getBookmarks = function(req, res) { 
+	res.json(data);
+}

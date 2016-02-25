@@ -79,7 +79,6 @@ $(document).ready(function() {
 
     //push new dish into your bookmarks
     $('#book_button').click(function() {
-      console.log(bookmarks);
       alert(curr.dishName + " bookmarked!");
       var newBMK = {
         'dishName' : curr.dishName,
@@ -87,12 +86,11 @@ $(document).ready(function() {
         'imgURL' : curr.imgURL,
         'address' : 'SD, CA'
       }
-      console.log("BMK push testing...")
+      console.log("BMK testing...");
+      console.log('rugt place!');
       console.log(newBMK);
 
-      bookmarks.bookmarks.push(newBMK);
-      console.log(bookmarks);
-
+      //store bookmarks in bookmark
       $.get(
         "/addBookmark",
         {
@@ -102,6 +100,8 @@ $(document).ready(function() {
           'address' : 'SD, CA'
         }
       );
+
+      
     })
 
   });
