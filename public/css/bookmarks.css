@@ -1,5 +1,10 @@
 body { 
 	margin-top: 70px;
+
+}
+
+#container { 
+	height: 900px;
 }
 
 .bmk_dishes { 
