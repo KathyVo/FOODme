@@ -81,12 +81,6 @@
 	margin-top: 10px;
 }
 
-#dishIMG { 
-	height: 400px;
-	width: 400px;
-	margin-top: 10px;
-}
-
 .downs div { 
 	display: inline-block;
 	color: black;
@@ -94,8 +88,8 @@
 }
 
 #dishIMG { 
-	height: 200px;
-	width: 200px;
+	height: 100px;
+	width: 100px;
 }
 
 .thumbs { 

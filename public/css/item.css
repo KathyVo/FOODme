@@ -116,3 +116,7 @@ body{
 	height: 35px;
 	font-size: 20px;
 }
+
+#container-fluid { 
+	height: 130vh;
+}
