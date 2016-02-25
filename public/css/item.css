@@ -104,3 +104,15 @@ body{
 .label {
 	font-size: 15px;
 }
+
+.option { 
+	display: inline-block;
+	margin-left: 70px;
+	float: left;
+
+}
+
+#rbtn { 
+	height: 35px;
+	font-size: 20px;
+}
