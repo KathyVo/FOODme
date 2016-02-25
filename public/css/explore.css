@@ -7,31 +7,35 @@
 #swipe { 
 	margin-top: 70px;
 	text-align: center;
+	margin-bottom: 0px;
 }
 
 #bmk_confirm { 
 	visibility: hidden;
 	background-color: red;
 	color: white;
+
 }
 
 .move { 
-	height: 40px;
 	width: 40px;
-	background-color: tomato;
 	border: none;
+
+}
+
+.move div { 
 	color: white;
-	font-style: bold;
-	font-size: 15px;
-
-
+	font-size: 60px;
+	background-color: tomato;
+	bottom: 40%;
 }
 
 #book_button { 
 	height: 50px;
-	width: 50px;
+	width: 250px;
 	background-color: white;
 	color: tomato;
+	font-size: 25px;
 	text-align: center;
 	border: 1px solid tomato;
 }
@@ -77,7 +81,7 @@
 
 #dish_img { 
 	height: 350px;
-	width: 225px;
+	width: 250px;
 	margin-top: 10px;
 }
 
