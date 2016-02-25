@@ -22,6 +22,11 @@ $(document).ready(function() {
   
 });
 
+	$('#snap').click(function() { 
+		$('#exDish').css('visibility', 'visible');
+		return false;
+	})
+
 	$('#upBtn').click(function() { 
 		console.log('Submit Clicked!');
 		var tags = $('#tags').val();
@@ -33,7 +38,7 @@ $(document).ready(function() {
 				'dishName': $('#name').val(),
 				'restaurantName': $('#restaurant').val(),
 				'address': $('#address').val(),
-				'imgURL': 'http://lorempixel.com/400/400/food/',
+				'imgURL': 'http://lackeyafjrotc.com/wp-content/uploads/2016/01/cute-broccoli-broccoli.jpg',
 				'ul': ups[0], 
 				'u2': ups[1], 
 				'u3': ups[2], 
