@@ -55,7 +55,7 @@ $(document).ready(function() {
     });
 
     $('#prev').click(function() {
-      if (i > 1) { 
+      if (i > 0) { 
         i = i-1;
         console.log(i);
         curr = dishes.dishes[i];

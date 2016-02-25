@@ -69,7 +69,7 @@ $(document).ready(function() {
         checkCompletion();
         if (complete == true) { 
             alert("Your rating was submited!");
-            window.location.href = "/exp";
+            window.location.href = "/item";
             return false;
 
         }
