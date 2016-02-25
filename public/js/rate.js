@@ -30,6 +30,8 @@ $(document).ready(function() {
         loadDishReview();
     });
 
+    
+
 
     //in rating form, the following are choices for facial expressions
     $('.em-disappointed').click(function() { 
