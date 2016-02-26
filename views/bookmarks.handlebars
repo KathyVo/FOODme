@@ -47,19 +47,19 @@
             </script>
           <a class="navbar-brand" href="/exp">FOODme</a>
 
-        
+
           <a href="/upload" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
         </div>
       </div>
-    </nav>
+    </nav>   
 
-   <div id = "container">
-
-    <h3>My Dishes</h3>
+  <div id = "container">
+    <br><br>
+    <h2 style="color: black;">My Dishes</h2>
 
     {{#each bookmarks}}
-      <div class = "item">
-        <div id="cookies" class="bmk_dishes item1">
+      <div class = "item bmk_dishes item1">
+        <div id="clickable" onclick="window.location.href='/item'">
           <img src="{{imageURL}}" class="img-responsive" />
           <div id = "cookie_text" class = "bmk_test">
             <p>{{restaurantName}}</p>
@@ -67,6 +67,7 @@
             <p>{{address}}</p>
           </div>
         </div>
+        <!--<a href = "#"><div class = "remove">remove</div></a>-->
       </div>
     {{/each}}
   </div> <!--end of container-->

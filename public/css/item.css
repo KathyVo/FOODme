@@ -18,13 +18,11 @@ body{
 }
 
 #book_button {
-	height: 75px;
-	width: 100px;
+
 	background-color: white;
 	color: tomato;
-	font-size: 18px;
+	font-size: 20px;
 	text-align: center;
-	border: 1px solid tomato;
 }
 
 #end {
@@ -32,7 +30,7 @@ body{
 	margin: 10px;
 }
 
-#faces { 
+#faces {
 	width: 100%;
 }
 
@@ -104,19 +102,19 @@ body{
 .label {
 	font-size: 15px;
 }
-
-.option { 
+/*
+.option {
 	display: inline-block;
 	margin-left: 40px;
 	float: left;
 
-}
+}*/
 
-#rbtn { 
+#rbtn {
 	height: 35px;
 	font-size: 20px;
 }
 
-#container-fluid { 
+#container-fluid {
 	height: 130vh;
 }

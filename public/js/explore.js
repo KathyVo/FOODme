@@ -31,8 +31,8 @@ $(document).ready(function() {
         console.log("Image is..." + im);
         $('#dish_img').attr('src', im);
         dlength = dishes.dishes.length;
-        console.log(dlength); 
-}); 
+        console.log(dlength);
+});
 
     //move to next dish image
     $('#next').click(function() {
@@ -48,14 +48,14 @@ $(document).ready(function() {
         $('#dish_img').attr('src', im);
 
       }
-      else { 
+      else {
         alert("no more dishes! go back!");
       }
-      
+
     });
 
     $('#prev').click(function() {
-      if (i > 0) { 
+      if (i > 0) {
         i = i-1;
         console.log(i);
         curr = dishes.dishes[i];
@@ -65,16 +65,16 @@ $(document).ready(function() {
         $('#dish_img').attr('src', im);
         console.log(dishes.length);
       }
-      else { 
+      else {
         alert('go forward!');
       }
-      
+
     });
 
     $('#dish_img').click(function() {
-            localStorage.setItem('rate', i); 
+            localStorage.setItem('rate', i);
             console.log("ajax testing...");
-            
+
         });
 
     //push new dish into your bookmarks
@@ -97,12 +97,11 @@ $(document).ready(function() {
           'dishName' : curr.dishName,
           'restaurantName' : curr.restaurantName,
           'imgURL' : curr.imgURL,
-          'address' : 'SD, CA'
+          'address' : curr.address
         }
       );
 
-      
+
     })
 
   });
-

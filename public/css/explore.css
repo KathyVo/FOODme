@@ -1,97 +1,87 @@
 /*left and right buttons */
-#swipe > div { 
+#swipe > div {
 	display: inline-block;
 	margin: auto;
 }
 
-#swipe { 
+#swipe {
 	margin-top: 60px;
 	text-align: center;
 	margin-bottom: 0px;
 	padding-top: px;
 }
 
-#bmk_confirm { 
+#bmk_confirm {
 	visibility: hidden;
 	background-color: red;
 	color: white;
 
 }
 
-.move { 
+.move {
 	width: 40px;
 	border: none;
 
 }
 
-.move div { 
+.move div {
 	color: white;
 	font-size: 60px;
 	background-color: tomato;
 	top: 50%;
 }
 
-#book_button { 
-	height: 40px;
-	width: 225px;
-	background-color: tomato;
-	color: white;
-	font-size: 25px;
-	text-align: center;
-	border: 1px solid tomato;
-	margin-top: 5px;
-}
 
-#bmkIcon { 
+#bmkIcon {
 	height: 80px;
 	width: 80px;
 }
-#ab { 
+#ab {
 	height: 30px;
 	width: 30px;
 	margin-right: 10px;
 }
 
-#end { 
+#end {
 	visibility: hidden;
 	margin: 10px;
 }
 
 
-#ht_type div { 
+#ht_type div {
 	display: inline-block;
 	margin-bottom: 10px;
 }
 
-#hashtags div { 
+#hashtags div {
 	margin-right: 1px;
 	font-size: 12px;
 }
 
-.ups div { 
+.ups div {
 	display: inline-block;
 	color: black;
 	text-align: center;
 
 }
 
-#dish_img { 
+#dish_img {
 	height: 200px;
 	width: 200px;
 	margin-top: 10px;
 }
 
-.downs div { 
+.downs div {
 	display: inline-block;
 	color: black;
 
 }
 
-#dishIMG { 
+#dishIMG {
 	height: 100px;
 	width: 100px;
 }
 
-.thumbs { 
+.thumbs {
 	width: 20px;
 }
