@@ -7,8 +7,8 @@ exports.view = function(req, res) { 
   var reaction = req.body.reaction;
 
   // Modify item using data from form
-  data.dishes[0].u4 = ups;
-  data.dishes[0].d4 = downs;
+  data.dishes[0].u3 = ups;
+  data.dishes[0].d3 = downs;
 
   switch (reaction) {
     case 'disappointed':
