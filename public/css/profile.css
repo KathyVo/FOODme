@@ -128,7 +128,11 @@ form {
 input {
 	width: 250px;
 }
-​
+
+body { 
+	padding-top: 100px;
+}
+
 .hidden {
 	visibility: hidden;
 }

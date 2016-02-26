@@ -2,7 +2,7 @@ $(document).ready(function() {
   $.ajaxSetup({ cache: true });
   $.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
     FB.init({
-      appId: '{1589516044683643}',
+      appId: '{504362743099055}',
       version: 'v2.5' // or v2.0, v2.1, v2.2, v2.3
     });
     $('#loginbutton,#feedbutton').removeAttr('disabled');
@@ -26,7 +26,7 @@ function statusChangeCallback(response) {
   if (response.status === 'connected') {
     // Logged into your app and Facebook.
     testAPI();
-    window.location.href = '/exp';
+    //window.location.href = '/exp';
     console.log('Redirected?');
   } else if (response.status === 'not_authorized') {
     // The person is logged into Facebook, but not your app.
@@ -53,7 +53,7 @@ function checkLoginState() {
 
 window.fbAsyncInit = function() {
   FB.init({
-    appId      : '1589516044683643',
+    appId      : '504362743099055',
     cookie     : true,  // enable cookies to allow the server to access
                         // the session
     xfbml      : true,  // parse social plugins on this page
@@ -91,10 +91,14 @@ window.fbAsyncInit = function() {
 function testAPI() {
   console.log('Welcome!  Fetching your information.... ');
   FB.api('/me', function(response) {
+    userID = JSON.stringify(response.id);
+    console.log("resp: " + JSON.stringify(response));
+    console.log("userID: " + userID);
     console.log('Successful login for: ' + response.name);
     /*document.getElementById('status').innerHTML =
       'Thanks for logging in, ' + response.name + '!';*/
     alert('Thanks for logging in, ' + response.name + '!');
+    window.location.href = '/exp';
   });
 }
 
@@ -129,13 +133,77 @@ function logOut() {
   });
 }*/
 
-function getProfilePic() {
-  FB.api(
-    "/{user-id}/picture",
-    function (response) {
-      if (response && !response.error) {
-        /* handle the result */
-      }
+function getProfileInfo() {
+  FB.getLoginStatus(function(response) {
+    if (response.status === 'connected') {
+      // the user is logged in and has authenticated your
+      // app, and response.authResponse supplies
+      // the user's ID, a valid access token, a signed
+      // request, and the time the access token
+      // and signed request each expire
+      var uid = response.authResponse.userID;
+      var accessToken = response.authResponse.accessToken;
+
+      FB.api('/me', function(response) {
+        document.getElementById('userName').innerHTML = response.name;
+        //alert ("Welcome " + response.name + ": Your UID is " + response.id);
+        console.log("response.id: " + response.id);
+        console.log("uid: " + uid);
+        console.log("accessToken: " + accessToken);
+      });
+
+
+      FB.api('/me', 'GET', {fields: 'picture.width(150).height(150)'}, function(response) {
+        console.log("response pic data url: " + response.picture.data.url);
+        document.getElementById('profPic').innerHTML = "<img src='" + response.picture.data.url + "'>";
+      });
+
+      FB.api('/me/user_friends', 'GET', {fields: 'user_friends'}, function(response) {
+        console.log("response: " + JSON.stringify(response));
+        console.log("user friends: " + response.user_friends);
+        //document.getElementById('profPic').innerHTML = "<img src='" + response.picture.data.url + "'>";
+      });
+
+      /*
+      FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id,picture.width(150).height(150)'}, function(response) {
+        document.getElementById('status').innerHTML = "<img src='" + response.picture.data.url + "'>";
+      });
+      */
+/*
+      FB.api(
+        //"/{user-id}/picture",
+        "{"+ uid +"}/picture",
+        function (response) {
+          console.log("resp: " + JSON.stringify(response));
+          if (response && !response.error) {
+          }
+        }
+      );*/
+    } else if (response.status === 'not_authorized') {
+      // the user is logged in to Facebook,
+      // but has not authenticated your app
+    } else {
+      // the user isn't logged in to Facebook.
     }
-  );
+  });
+
+        /*
+    console.log("userID: " + userID);
+    FB.api(
+      //"/{user-id}/picture",
+      "{user-id}/picture",
+      function (response) {
+        console.log(response);
+        console.log("resp: " + JSON.stringify(response));
+        if (response && !response.error) {
+          //document.getElementById('profPic').innerHTML = response.
+
+        }
+      }
+    );
+
+    FB.api('/me', function(response) {
+      console.log("Changing profile pic");
+      document.getElementById('userName').innerHTML = response.name;
+    });*/
 }
