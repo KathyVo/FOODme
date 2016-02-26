@@ -34,35 +34,9 @@ $(document).ready(function() {
 
 
     //in rating form, the following are choices for facial expressions
-    $('.em-disappointed').click(function() { 
-        console.log('disappointed clicked!');
-        $('.em-disappointed').css('opacity', 1);
-        $('.em-confused').css('opacity', 0.5);
-        $('.em-smiley').css('opacity', 0.5);
-        face = 'dis';
-
-    });
-
-
-    $('.em-confused').click(function() { 
-        console.log('meh clicked!');
-        $('.em-disappointed').css('opacity', 0.5);
-        $('.em-confused').css('opacity', 1);
-        $('.em-smiley').css('opacity', 0.5);
-        face = 'meh';
-
-
-    });
-
-    $('.em-smiley').click(function() { 
-        console.log('yay clicked!');
-        $('.em-disappointed').css('opacity', 0.5);
-        $('.em-confused').css('opacity', 0.5);
-        $('.em-smiley').css('opacity', 1);
-        face = 'yay';
-
+    $('.emoji').click(function() { 
+        $(this).css('opacity', 1);
     })
-
     $('#rateBtn').click(function() { 
         console.log("rate id success!");
     });
