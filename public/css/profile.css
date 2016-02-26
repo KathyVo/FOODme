@@ -110,6 +110,15 @@ h4 {
 		width: 215px;
 ​
 }
+
+.avatar { 
+	height: 150px;
+	width: 150px;
+}
+
+.logout { 
+	margin-top: 10px;
+}
 ​
 form {
 ​
