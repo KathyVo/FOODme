@@ -50,7 +50,7 @@ $(document).ready(function() {
 
       }
       else {
-        dlength = 0;
+        i = 0;
         console.log("else-dlength: " + dlength);
         //alert("no more dishes! go back!");
       }
