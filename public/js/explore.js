@@ -36,6 +36,9 @@ $(document).ready(function() {
 
     //move to next dish image
     $('#next').click(function() {
+      $.get('/addExplore', function(data) {
+          dishes = data;
+      });
       console.log("next-i: " + i);
       //check if it exeeds number of dishes
       if (i < dlength -1) {
@@ -62,6 +65,9 @@ $(document).ready(function() {
     });
 
     $('#prev').click(function() {
+      $.get('/addExplore', function(data) {
+          dishes = data;
+      });
       if (i > 0) {
         i = i-1;
         console.log(i);

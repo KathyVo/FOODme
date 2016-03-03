@@ -32,7 +32,7 @@ $(document).ready(function() {
 		var tags = $('#tags').val();
 		var ups = new Array();
 		ups = tags.split(',');
-		alert(ups[0] + "and " + ups[1] + "and " + ups[2]);
+		alert(ups[0] + " and " + ups[1] + " and " + ups[2]);
 
 		$.post('/addExplore', {
 				'dishName': $('#name').val(),

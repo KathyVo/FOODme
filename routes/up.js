@@ -31,6 +31,9 @@ exports.addExplore = function(req, res) {
 		data.dishes[i+1] = data.dish[i];
 	}
 	data.dishes[0] = addDish;
+
+
+
 	console.log(addDish);
 	//data['dishes'].push(addDish);
 	console.log(data);
