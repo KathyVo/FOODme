@@ -1,5 +1,5 @@
 body{
-	margin-top: 55px;
+	margin-top: 70px;
 }
 
 #bmk_confirm {
@@ -17,14 +17,15 @@ body{
 	font-style: bold;
 }
 
-#book_button {
-	height: 75px;
-	width: 100px;
-	background-color: white;
-	color: tomato;
-	font-size: 18px;
+#book_btn {
+	border-radius: 9px;
+	height: 35px;
+	width: 140px;
+	background-color: #d83c3c;
+	color: white;
+	font-size: 23px;
 	text-align: center;
-	border: 1px solid tomato;
+	border: 1px solid #d83c3c;
 }
 
 #end {
@@ -32,7 +33,7 @@ body{
 	margin: 10px;
 }
 
-#faces { 
+#faces {
 	width: 100%;
 }
 
@@ -105,18 +106,25 @@ body{
 	font-size: 15px;
 }
 
-.option { 
+.option {
 	display: inline-block;
 	margin-left: 40px;
 	float: left;
 
 }
 
-#rbtn { 
+#rbtn {
 	height: 35px;
-	font-size: 20px;
+	width: 140px;
+	font-size: 25px;
+	border-radius: 9px;
+	background-color: #d83c3c;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	border: 1px solid #d83c3c;
 }
 
-#container-fluid { 
+#container-fluid {
 	height: 130vh;
 }

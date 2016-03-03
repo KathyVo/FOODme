@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
 
+/*body{
+  background-image: url("https://static.pexels.com/photos/6740/food-sugar-lighting-milk.jpg");
+  background-size: 100%;
+}*/
+
 #logo {
   width: 225px;
   margin-left: -12px;
