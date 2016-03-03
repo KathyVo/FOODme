@@ -34,6 +34,9 @@ $(document).ready(function() {
 		ups = tags.split(',');
 		alert(ups[0] + " and " + ups[1] + " and " + ups[2]);
 
+		var down = new Array();
+		downs = tags.split(',');
+
 		$.post('/addExplore', {
 				'dishName': $('#name').val(),
 				'restaurantName': $('#restaurant').val(),

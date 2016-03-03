@@ -24,19 +24,26 @@ exports.addExplore = function(req, res) {
 			'd3': req.body.d3
 		};
 
-	data.dishes.push(addDish);
+	//data.dishes.push(addDish);
 
 	var i;
-	for(i = 0; i < 6; i++) {
-		data.dishes[i+1] = data.dish[i];
+	for(i = 6; i > 0; i--) {
+		data.dishes[i] = data.dishes[i-1];
+		console.log("i: " + i);
 	}
+/*
+	data.dishes[6] = data.dishes[5];
+	data.dishes[5] = data.dishes[4];
+	data.dishes[4] = data.dishes[3];
+	data.dishes[3] = data.dishes[2];
+	data.dishes[2] = data.dishes[1];
+	data.dishes[1] = data.dishes[0];*/
+	//data.dishes[1] = data.dishes[0];
 	data.dishes[0] = addDish;
 
-
-
-	console.log(addDish);
+	console.log("addDish: " + addDish);
 	//data['dishes'].push(addDish);
-	console.log(data);
+	console.log("data: " + data);
 	// res.render('explore', data);
 };
 
