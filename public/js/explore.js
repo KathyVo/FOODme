@@ -55,7 +55,7 @@ $(document).ready(function() {
         curr = dishes.dishes[i];
         var im = curr.imgURL;
         $('#dish_img').attr('src', im);
-        
+
         //alert("no more dishes! go back!");
       }
 
@@ -73,7 +73,12 @@ $(document).ready(function() {
         console.log(dishes.length);
       }
       else {
-        alert('go forward!');
+        i = dlength-1;
+        curr = dishes.dishes[i];
+        var im = curr.imgURL;
+        $('#dish_img').attr('src', im);
+        console.log("prev-else-i: " + i);
+        //alert('go forward!');
       }
 
     });
