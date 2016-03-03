@@ -36,7 +36,7 @@ $(document).ready(function() {
 
     //move to next dish image
     $('#next').click(function() {
-
+      console.log("next-dlength: " + dlength);
       //check if it exeeds number of dishes
       if (i < dlength -1) {
         i = i+1;
@@ -46,10 +46,12 @@ $(document).ready(function() {
         console.log(curr);
         var im = curr.imgURL;
         $('#dish_img').attr('src', im);
+        console.log("if-dlength: " + dlength);
 
       }
       else {
         dlength = 0;
+        console.log("else-dlength: " + dlength);
         //alert("no more dishes! go back!");
       }
 
