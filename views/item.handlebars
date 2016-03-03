@@ -11,6 +11,7 @@
 
   <link type = "text/css" rel="stylesheet" href="css/style.css">
   <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
+  <link type = "text/css" rel="stylesheet" href="css/explore.css">
   <link type = "text/css" rel="stylesheet" href="css/item.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -83,7 +84,7 @@
           <li class="list-group-item">
             <div class = "ups">
               <div><span class="label label-default"><i class = "em em-thumbsup" class = "thumbs"></i>&nbsp;Likes</span></div><br><br>
-              <span class="label label-info"><div id = "u1">{{u1}}</div></span>
+              <span class="label label-primary"><div id = "u1">{{u1}}</div></span>
               <span class="label label-info"><div id = "u2">{{u2}}</div></span>
               <span class="label label-info"><div id = "u3">{{u3}}</div></span>
               <div id = "u4">{{u4}}</div>
@@ -102,8 +103,8 @@
             <div class = "downs">
               <div><span class="label label-default"><i class = "em em-thumbsdown" class = "thumbs"></i>&nbsp;Dislikes</span></div><br><br>
               <span class="label label-danger"><div id = "d1">{{d1}}</div></span>
-              <span class="label label-danger"><div id = "d2">{{d2}}</div></span>
-              <span class="label label-danger"><div id = "d3">{{d3}}</div></span>
+              <span class="label label-warning"><div id = "d2">{{d2}}</div></span>
+              <span class="label label-warning"><div id = "d3">{{d3}}</div></span>
               <div id = "d4">{{d4}}</div>
             </div>
           </li>
@@ -112,15 +113,17 @@
     </div>
 
     <div class = 'option'>
-      <a href = "#bmk_confirm" id = "book_button" data-rel = "popup" class="btn btn-lg"><button>Save Dish</button></a>
-      <a href = '/rate'><button class="btn btn-lg btn-primary">Rate It</button></a>
+      <a href = "#bmk_confirm" data-rel = "popup"><button id = "book_btn">Save Dish</button></a>
     </div>
 
     <div id = "rate_btn" class = "option">
+        <a href = '/rate'><button id = "rbtn">Rate It</button></a>
     </div>
 
 
   </div> <!--end of container-->
-  <!--{{> google}}-->
+
+  <!--google partial was here-->
+
   </body>
 </html>

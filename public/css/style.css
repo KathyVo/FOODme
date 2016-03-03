@@ -1,6 +1,7 @@
 body {
 	text-align: center;
 	font-family: AvenirNextLTPro-Regular;
+	margin-top: 100px;
 	width: 100%;
 	height: 100%;
 }
@@ -253,8 +254,6 @@ input {
 	background-color: tomato;
 }*/
 
-<<<<<<< HEAD
-=======
 .form-control input[type="text"] {
     margin-bottom: 5px;
     border-bottom-left-radius: 0;
@@ -273,8 +272,6 @@ input {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
->>>>>>> bd1c570703a903b17a7b0387d3e1aa83a606fbdb
-
 
 .cf:before, .cf:after{
    content:"";
@@ -353,7 +350,6 @@ border-radius: 3px 0 0 3px;
 
 .explore-link {
 	color: #eee;
-=======
 }
 
 /* Form submit button */
