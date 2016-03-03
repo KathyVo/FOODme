@@ -49,7 +49,8 @@ $(document).ready(function() {
 
       }
       else {
-        alert("no more dishes! go back!");
+        dlength = 0;
+        //alert("no more dishes! go back!");
       }
 
     });
