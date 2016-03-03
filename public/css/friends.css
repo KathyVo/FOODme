@@ -1,20 +1,20 @@
-h1 { 
+h1 {
 	margin-top: 50px;
 }
 
-#container { 
+#container {
 
 	margin-top: 100px;
 	height: 750px;
 	margin-left: 20px;
 }
 
-#container > div { 
+#container > div {
 
 	margin-left: 5px;
 }
 
-.table { 
+.table {
 	width: 250px;
 	border: 0.5px solid black;
 	margin-left: 40px;
@@ -23,48 +23,48 @@ h1 {
 }
 
 
-.friend { 
+.friend {
 	text-align: left;
 	padding-left: 20px;
 	padding: 5px;
 }
 
-.friend * { 
+.friend * {
 	display: inline-block;
 }
 
-.friend img { 
+.friend img {
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
 }
 
-.top * { 
+.top * {
 	display: inline-block;
 }
 
-.name { 
+.name {
 	margin-left: 15px;
 	text-align: center;
 	font-size: 16px;
 }
 
-.rank { 
+.rank {
 	margin-right: 15px;
 	font-size: 20px;
 }
 
-.title { 
+.title {
 
 	text-align: center;
 }
 
-#profName { 
+#profName {
 	margin-top: 70px;
 	font-size: 30px;
 }
 
-#pIcon { 
+#pIcon {
 	height: 100px;
 	width: 100px;
 	float: left;
@@ -72,21 +72,21 @@ h1 {
 	border-radius: 50%;
 }
 
-#info > { 
+#info > {
 	display: inline-block;
 
 }
 
-.inline { 
+.inline {
 	display: inline-block;
 	width: 100%;
 }
 
-#infoText { 
+#infoText {
 	padding-top: 15px;
 }
 
-#myDishes { 
+#myDishes {
 	margin-top: 10px;
 	float: left;
 	text-align: left;

@@ -7,15 +7,15 @@
 			"imageURL": "food/cookie_sandwich.jpeg"
 		},
 		{
-      "restaurantName": "Really Cool Thai Place",
-			"dishName": "Coconut Fireball Curry",
+      "restaurantName": "Thai House Cuisine",
+			"dishName": "Coconut Chicken Curry",
       "address": "Convoy, San Diego, CA",
 			"imageURL": "food/curry.jpg"
 		},
     {
       "restaurantName": "Phil's BBQ",
 			"dishName": "World Famous Ribs",
-      "address": "San Diego, CA",
+      "address": "Downtown, San Diego, CA",
 			"imageURL": "food/ribs.jpg"
     }
 	]

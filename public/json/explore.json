@@ -1,103 +1,120 @@
 {
 	"dishes": [
-
 		{
 			"id": "0",
-			"dishName": "burger",
+			"dishName": "The Lounge Burger",
 			"restaurantName": "Burger Lounge",
-			"imgURL": "../food/burger.jpg",
-			"address": "San Diego, CA",
+			"address": "1101 Wall Street, San Diego, CA 92037",
+			"imgURL": "food/burger.jpg",
 			"dis": "6",
 			"meh": "5",
-			"yay": "12",
+			"yay": "15",
+			"ups" : [
+				"savory", "foodgasm", "pattyonfleek"
+			],
 			"u1": "savory",
 			"u2": "foodgasm",
 			"u3": "pattyonfleek",
-			"u4": "",
+			"u4":" ",
 			"d1": "nasty",
 			"d2": "old",
 			"d3": "dry",
-			"d4": ""
+			"d4":" "
 		},
 		{
 			"id": "1",
-			"dishName": "cookie_sandwich",
+			"dishName": "Cookie Sandwich Tower",
 			"restaurantName": "Baked Bear",
-			"imgURL": "../food/cookie_sandwich.jpeg",
+			"address": "2929 Fifth Avenue, San Diego, CA 92103",
+			"imgURL": "food/cookie_sandwich.jpeg",
 			"dis": "6",
 			"meh": "5",
 			"yay": "12",
 			"u1": "brainfreeze",
-			"u2": "sweet",
+			"u2": "perfection",
 			"u3": "sugaroverload",
-			"d1": "n",
-			"d2": "o",
-			"d3": "p"
+			"u4":" ",
+			"d1": "stale",
+			"d2": "too sweet",
+			"d3": "small",
+			"d4":" "
 		},
 		{
 
 			"id": "2",
-			"dishName": "curry",
-			"restaurantName": "Thai Place",
-			"imgURL": "../food/curry.jpg",
+			"dishName": "Coconut Chicken Curry",
+			"restaurantName": "Thai House Cuisine",
+			"address": "4225 Convoy St, San Diego, CA 92111",
+			"imgURL": "food/curry.jpg",
 			"dis": "2",
 			"meh": "8",
 			"yay": "12",
 			"u1": "hot",
 			"u2": "umami",
 			"u3": "wonderful",
-			"d1": "n",
-			"d2": "o",
-			"d3": "p"
+			"u4":" ",
+			"d1": "spicy",
+			"d2": "too creamy",
+			"d3": "americanized",
+			"d4":" "
 		},
 		{
 
 			"id": "3",
-			"dishName": "steak",
+			"dishName": "Prime Rib Eye",
 			"restaurantName": "Donovan's",
-			"imgURL": "../food/steak.jpg",
+			"imgURL": "food/steak.jpg",
+			"address": "1250 Prospect St, La Jolla, CA 92037",
 			"dis": "6",
 			"meh": "5",
 			"yay": "12",
 			"u1": "delicious",
 			"u2": "savory",
 			"u3": "OMFG",
-			"d1": "n",
-			"d2": "o",
-			"d3": "p"
+			"u4":" ",
+			"d1": "overcooked",
+			"d2": "fatty",
+			"d3": "small",
+			"d4":" "
 		},
 		{
 
 			"id": "4",
-			"dishName": "ribs",
+			"dishName": "Full Rib Rack",
 			"restaurantName": "Phil's BBQ",
-			"imgURL": "../food/ribs.jpg",
+			"imgURL": "food/ribs.jpg",
+			"address": "3750 Sports Arena Blvd, San Diego, CA 92110",
 			"dis": "6",
 			"meh": "5",
 			"yay": "12",
 			"u1": "saucy",
 			"u2": "best",
 			"u3": "roast",
-			"d1": "n",
-			"d2": "o",
-			"d3": "p"
+			"u4":" ",
+			"d1": "salty",
+			"d2": "messy",
+			"d3": "burnt",
+			"d4":" "
 
 		},
 		{
 
 			"id": "5",
-			"dishName": "pizza",
+			"dishName": "Cheese Pizza",
 			"restaurantName": "Pizza Port",
-			"imgURL": "../food/pizza.jpg",
+			"address": "1956 Bacon St, San Diego, CA 92107",
+			"imgURL": "food/pizza.jpg",
 			"dis": "6",
 			"meh": "5",
 			"yay": "12",
 			"u1": "cheesy",
 			"u2": "warm",
 			"u3": "happy",
-			"d1": "n",
-			"d2": "o",
-			"d3": "p"
+			"u4": "",
+			"d1": "heart attack",
+			"d2": "oily",
+			"d3": "dry",
+			"d4":" "
 		}
 	]
 }

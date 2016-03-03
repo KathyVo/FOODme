@@ -22,5 +22,7 @@ exports.view = function(req, res) { 
       break;
   }
 
-  res.render('updatedDish', data.dishes[0]);
+  console.log("Rating Submitted!");
+
+  res.render('explore', data.dishes[0]);
 }

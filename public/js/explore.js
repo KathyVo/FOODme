@@ -31,12 +31,12 @@ $(document).ready(function() {
         console.log("Image is..." + im);
         $('#dish_img').attr('src', im);
         dlength = dishes.dishes.length;
-        console.log(dlength); 
-}); 
+        console.log(dlength);
+});
 
     //move to next dish image
     $('#next').click(function() {
-
+      console.log("next-i: " + i);
       //check if it exeeds number of dishes
       if (i < dlength -1) {
         i = i+1;
@@ -46,16 +46,23 @@ $(document).ready(function() {
         console.log(curr);
         var im = curr.imgURL;
         $('#dish_img').attr('src', im);
+        console.log("if-i: " + i);
 
       }
-      else { 
-        alert("no more dishes! go back!");
+      else {
+        i = 0;
+        console.log("else-i: " + i);
+        curr = dishes.dishes[i];
+        var im = curr.imgURL;
+        $('#dish_img').attr('src', im);
+
+        //alert("no more dishes! go back!");
       }
-      
+
     });
 
     $('#prev').click(function() {
-      if (i > 0) { 
+      if (i > 0) {
         i = i-1;
         console.log(i);
         curr = dishes.dishes[i];
@@ -65,16 +72,21 @@ $(document).ready(function() {
         $('#dish_img').attr('src', im);
         console.log(dishes.length);
       }
-      else { 
-        alert('go forward!');
+      else {
+        i = dlength-1;
+        curr = dishes.dishes[i];
+        var im = curr.imgURL;
+        $('#dish_img').attr('src', im);
+        console.log("prev-else-i: " + i);
+        //alert('go forward!');
       }
-      
+
     });
 
     $('#dish_img').click(function() {
-            localStorage.setItem('rate', i); 
+            localStorage.setItem('rate', i);
             console.log("ajax testing...");
-            
+
         });
 
     //push new dish into your bookmarks
@@ -100,12 +112,12 @@ $(document).ready(function() {
           'dishName' : curr.dishName,
           'restaurantName' : curr.restaurantName,
           'imgURL' : curr.imgURL,
-          'address' : 'SD, CA'
+          'address' : curr.address
         }
       );
-
-      
     })
-
   });
 
+$('#submitBtn').click(function() {
+  alert("Rating Sent!");
+});
