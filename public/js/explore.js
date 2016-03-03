@@ -36,7 +36,7 @@ $(document).ready(function() {
 
     //move to next dish image
     $('#next').click(function() {
-      console.log("next-dlength: " + dlength);
+      console.log("next-i: " + i);
       //check if it exeeds number of dishes
       if (i < dlength -1) {
         i = i+1;
@@ -46,12 +46,16 @@ $(document).ready(function() {
         console.log(curr);
         var im = curr.imgURL;
         $('#dish_img').attr('src', im);
-        console.log("if-dlength: " + dlength);
+        console.log("if-i: " + i);
 
       }
       else {
         i = 0;
-        console.log("else-dlength: " + dlength);
+        console.log("else-i: " + i);
+        curr = dishes.dishes[i];
+        var im = curr.imgURL;
+        $('#dish_img').attr('src', im);
+        
         //alert("no more dishes! go back!");
       }
 
