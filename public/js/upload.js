@@ -34,6 +34,9 @@ $(document).ready(function() {
 		ups = tags.split(',');
 		alert($('#name').val() + " was uploaded!");
 
+		var down = new Array();
+		downs = tags.split(',');
+
 		$.post('/addExplore', {
 				'dishName': $('#name').val(),
 				'restaurantName': $('#restaurant').val(),
