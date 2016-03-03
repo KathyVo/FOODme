@@ -4,19 +4,22 @@
       "restaurantName": "Extraordinary Desserts",
 			"dishName": "Cookie Sandwich Tower",
       "address": "Downtown, San Diego, CA",
-			"imageURL": "food/cookie_sandwich.jpeg"
+			"imageURL": "food/cookie_sandwich.jpeg", 
+			"id": "1"
 		},
 		{
-      "restaurantName": "Really Cool Thai Place",
+      "restaurantName": "Thai House Cuisine",
 			"dishName": "Coconut Fireball Curry",
-      "address": "Convoy, San Diego, CA",
-			"imageURL": "food/curry.jpg"
+      "address": "4225 Convoy St, San Diego, CA 92111",
+			"imageURL": "food/curry.jpg", 
+			"id": "2"
 		},
     {
       "restaurantName": "Phil's BBQ",
 			"dishName": "Full Rib Rack",
       "address": "San Diego, CA",
-			"imageURL": "food/ribs.jpg"
+			"imageURL": "food/ribs.jpg", 
+			"id": "4"
     }
 	]
 }

@@ -118,7 +118,8 @@ $(document).ready(function() {
           'dishName' : curr.dishName,
           'restaurantName' : curr.restaurantName,
           'imgURL' : curr.imgURL,
-          'address' : curr.address
+          'address' : curr.address,
+          'id': curr.id
         }
       );
     })

@@ -1,5 +1,5 @@
 // Get all of our friend data
-var data = require('../bookmarks.json');
+var data = require('../public/json/bookmarks.json');
 
 exports.view = function(req, res){
 	console.log(data);
@@ -9,3 +9,7 @@ exports.view = function(req, res){
 		'imageURL': 'http://lorempixel.com/500/500/people',
 		'description': 'All my friends are imaginary'*/
 };
+
+exports.getBookmarks = function(req, res) { 
+	res.json(data);
+}

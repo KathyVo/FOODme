@@ -14,7 +14,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../function.js"></script>
+  <script type="text/javascript" src="js/book.js"></script>
 
 
   <title>FOODme</title>
@@ -59,9 +59,9 @@
 
     {{#each bookmarks}}
       <div class = "item">
-        <div id="cookies" class="bmk_dishes item1">
+        <div id="{{id}}" class="bmk_dishes">
           <img src="{{imageURL}}" class="img-responsive" />
-          <div id = "cookie_text" class = "bmk_test">
+          <div id = "item_text" class = "bmk_test">
             <p>{{restaurantName}}</p>
             <p>{{dishName}}</p>
             <p>{{address}}</p>

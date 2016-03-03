@@ -51,6 +51,7 @@ app.get('/', index.view);
 app.get('/add', add.addFriend)
 app.get('/homepage', homepage.view)
 app.get('/bookmarks', bookmarks.view)
+app.get('/getBooks', bookmarks.getBookmarks)
 app.get('/exp', exp.view)
 app.get('/item', item.view)
 app.get('/rate', rate.view)
