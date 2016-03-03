@@ -98,7 +98,7 @@ $(document).ready(function() {
     //push new dish into your bookmarks
     $('#book_button').click(function() {
       //send google analytics on bookmark like
-      ga("send", "event", "bookmark", "click");
+      //ga("send", "event", "bookmark", "click");
       //alert that dish was bookmarked
       alert(curr.dishName + " bookmarked!");
       var newBMK = {
@@ -122,8 +122,10 @@ $(document).ready(function() {
         }
       );
     })
+
+    $('#submitBtn').click(function() {
+      alert("Rating Sent!");
+    });
   });
 
-$('#submitBtn').click(function() {
-  alert("Rating Sent!");
-});
+
