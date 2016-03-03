@@ -32,7 +32,7 @@ $(document).ready(function() {
 		var tags = $('#tags').val();
 		var ups = new Array();
 		ups = tags.split(',');
-		alert(ups[0] + " and " + ups[1] + " and " + ups[2]);
+		alert($('#name').val() + " was uploaded!");
 
 		var down = new Array();
 		downs = tags.split(',');
@@ -45,9 +45,7 @@ $(document).ready(function() {
 				'ul': ups[0],
 				'u2': ups[1],
 				'u3': ups[2],
-				'd1': downs[0],
-				'd2': downs[1],
-				'd3': downs[2]
+				
 
 		}, function (res) {});
 

@@ -19,12 +19,8 @@ exports.addExplore = function(req, res) {
 			'ul': req.body.u1,
 			'u2': req.body.u2,
 			'u3': req.body.u3,
-			'd1': req.body.d1,
-			'd2': req.body.d2,
-			'd3': req.body.d3
-		};
 
-	//data.dishes.push(addDish);
+		};
 
 	var i;
 	for(i = 6; i > 0; i--) {
@@ -39,12 +35,8 @@ exports.addExplore = function(req, res) {
 	data.dishes[2] = data.dishes[1];
 	data.dishes[1] = data.dishes[0];*/
 	//data.dishes[1] = data.dishes[0];
-	data.dishes[0] = addDish;
 
-	console.log("addDish: " + addDish);
-	//data['dishes'].push(addDish);
-	console.log("data: " + data);
-	// res.render('explore', data);
+	data.dishes[0] = addDish;
 };
 
 exports.getExplore = function (req, res) {

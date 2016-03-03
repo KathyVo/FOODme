@@ -1,33 +1,53 @@
-#ab { 
+#ab {
 	width: 40px;
 	height: 40px;
 	opacity: 0.5;
 }
 
-.emoji { 
+.emoji {
 	display: inline-block;
 }
 
-.emoji-radio { 
+p{
+	font-size: 18px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.emoji-radio {
 	display: none;
 }
 
-#ab:hover { 
+#ab:hover {
 	opacity: 1;
 }
 
-#submit { 
+#submit {
 	margin-top: 10px;
 }
 
-form { 
+form {
 	text-align: center;
 }
 
 #ui{
 	border-radius: 3px;
+	height: 30px;
 }
 
 #di{
 	border-radius: 3px;
+	height: 30px;
+}
+
+#submitBtn{
+	margin-top: 20px;
+	border-radius: 9px;
+	height: 45px;
+	width: 180px;
+	background-color: #d83c3c;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	border: 1px solid #d83c3c;
 }

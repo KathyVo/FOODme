@@ -154,6 +154,8 @@ $(document).ready(function() {
 
   });
 
+
+
 $('#submitBtn').click(function() {
   alert("Rating Sent!");
 });

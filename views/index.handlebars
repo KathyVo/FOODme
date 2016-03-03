@@ -21,7 +21,8 @@
 </head>
 
 <body>
-
+  <h1>Welcome to</h1>
+  <img src="../img/logo2white.png" id = "white_logo">
   <!-- For Facebook Login -->
   <script>
   window.fbAsyncInit = function() {
@@ -42,11 +43,10 @@
 </script>
 
 <!--end fb login script-->
-
+  <br></br>
+  <br></br>
+  <br></br>
   <div class="container">
-    <div class="login-card">
-      <img src="../img/logo.jpg" id="logo"/>
-      <hr>
       <form>
         <!--
         <input type="text" name="user" placeholder="Username">
@@ -56,7 +56,7 @@
         -->
 
         <!-- FACEBOOK LOGIN -->
-        <fb:login-button scope="public_profile,email,user_friends" onlogin="checkLoginState();" id="status"></fb:login-button>
+        <fb:login-button scope="public_profile,email,user_friends" onlogin="checkLoginState();" id="status" size="xlarge"></fb:login-button>
 
       </form>
 
@@ -65,9 +65,8 @@
         <a href="index.html">Register</a> / <a href="#">Forgot Password</a>
       </div>
       -->
-
     </div>
-  </div>
+
 
 </body>
 </html>

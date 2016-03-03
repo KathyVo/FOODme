@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  {{> experiment}}
+  <!--experiment partial was here-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -88,11 +88,11 @@
 
       <div id = "swipe">
           <p>Click dish for more info</p>
-         <div class = "move" id = "prev"> <div> < </div> </div>
+         <div class = "move" id = "prev"> <div> <span class="glyphicon glyphicon-triangle-left"> </div> </div>
         <div class = "item">
           <a href="/item"><img src = '/item' id = "dish_img"/></a>
         </div>
-         <div class = "move" id = "next"> <div> > </div> </div>
+         <div class = "move" id = "next"> <div> <span class="glyphicon glyphicon-triangle-right"> </div> </div>
      </div>
 
         <a href = "#bmk_confirm" id = "bmk" data-rel = "popup"><button id = "book_button">Save Dish</button></a>
@@ -100,6 +100,6 @@
 
 
 	 </div> <!--end of container-->
-    {{> google}}
+    <!--google partial was here-->
   </body>
 </html>
