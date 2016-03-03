@@ -100,8 +100,9 @@ $(document).ready(function() {
           'address' : curr.address
         }
       );
-
-
     })
-
   });
+
+$('#submitBtn').click(function() {
+  alert("Rating Sent!");
+});
