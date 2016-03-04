@@ -1,6 +1,5 @@
 body {
 	margin-top: 90px;
-
 }
 
 #container {
@@ -8,13 +7,12 @@ body {
 }
 
 .bmk_dishes {
-	height: 90px;
-	width: 300px;
+	height: 105px;
+	width: 320px;
 	border-radius: 9px;
 	border: 2px solid #d83c3c;
 	margin: auto;
 	margin-bottom: 5px;
-
 }
 
 .item div {
@@ -27,14 +25,13 @@ body {
 
 .bmk_dishes img {
 	border-radius: 7px;
-	height: 86px;
-	width: 86px;
+	height: 101px;
+	width: 101px;
 	position: relative;
 	float: left;
 }
 
-.bmk_text {
+.bmk_test {
 	position: relative;
 	float: center;
-
 }
