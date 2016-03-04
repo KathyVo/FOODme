@@ -48,6 +48,6 @@ $(document).ready(function() {
 				
 
 		}, function (res) {});
-
+		window.location.href = '/exp';
 	})
 })

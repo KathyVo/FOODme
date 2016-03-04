@@ -149,3 +149,7 @@ body {
 .glyphicon.glyphicon-chevron-left:hover {
     color: #5e5e5e;
 }
+
+#container { 
+	height: 700px;
+}
