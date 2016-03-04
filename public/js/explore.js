@@ -97,8 +97,14 @@ $(document).ready(function() {
 
     //push new dish into your bookmarks
     $('#book_button').click(function() {
-      //send google analytics on bookmark like
-      //ga("send", "event", "bookmark", "click");
+      /*send google analytics on bookmark like
+      var click = false; 
+      if (click == false) {
+          ga("send", "event", "bookmark", "click");
+          click = true;
+      }     
+      */
+
       //alert that dish was bookmarked
       alert(curr.dishName + " bookmarked!");
       var newBMK = {
@@ -129,6 +135,13 @@ $(document).ready(function() {
   //push new dish into your bookmarks from item page
   $('#book_btn').click(function() {
     //alert that dish was bookmarked
+    /*send google analytics on bookmark like
+      var click = false; 
+      if (click == false) {
+          ga("send", "event", "bookmark", "click");
+          click = true;
+      }     
+      */
     alert(curr.dishName + " bookmarked!");
     var newBMK = {
       'dishName' : curr.dishName,
