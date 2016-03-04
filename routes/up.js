@@ -19,17 +19,24 @@ exports.addExplore = function(req, res) {
 			'ul': req.body.u1,
 			'u2': req.body.u2,
 			'u3': req.body.u3,
-			
+
 		};
 
+	var i;
+	for(i = 6; i > 0; i--) {
+		data.dishes[i] = data.dishes[i-1];
+		console.log("i: " + i);
+	}
+/*
+	data.dishes[6] = data.dishes[5];
+	data.dishes[5] = data.dishes[4];
+	data.dishes[4] = data.dishes[3];
+	data.dishes[3] = data.dishes[2];
+	data.dishes[2] = data.dishes[1];
+	data.dishes[1] = data.dishes[0];*/
+	//data.dishes[1] = data.dishes[0];
+
 	data.dishes[0] = addDish;
-
-
-
-	console.log(addDish);
-	//data['dishes'].push(addDish);
-	console.log(data);
-	//res.render('explore', data);
 };
 
 exports.getExplore = function (req, res) {

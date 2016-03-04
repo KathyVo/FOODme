@@ -1,14 +1,54 @@
-#container { 
+#container {
 	margin-top: 50px;
+	height: 600px;
 }
 
-#exDish { 
+#exDish {
 	height: 75px;
 	width: 75px;
 	visibility: hidden;
 }
 
-button { 
+button {
 	display: inline;
 	margin-top: 2px;
+}
+
+input{
+	border-radius: 3px;
+	height: 35px;
+	text-align: center;
+}
+
+p{
+	margin-top: 12px;
+	margin-bottom: 2px;
+	font-size: 18px;
+}
+
+#intag{
+	font-size: 12px;
+	margin-top: 1px;
+}
+
+#snap{
+	position:relative;
+	width: 170px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 18px;
+	background-color: #D8D8D8;
+	border: 1px solid grey;
+}
+
+#upBtn{
+	margin-top: 10px;
+	border-radius: 9px;
+	height: 45px;
+	width: 180px;
+	background-color: #d83c3c;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	border: 1px solid #d83c3c;
 }

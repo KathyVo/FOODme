@@ -1,4 +1,4 @@
-var data = require('../bookmarks.json');
+var data = require('../public/json/bookmarks.json');
 
 exports.view = function(req, res) {
 	console.log("Explore page testing...")
@@ -13,11 +13,11 @@ exports.addBkmk = function(req, res) { 
 		'restaurantName': req.query.restaurantName,
 		'dishName': req.query.dishName,
 		'address': req.query.address,
-		'imageURL': req.query.imgURL 
+		'imageURL': req.query.imgURL,
+		'id': req.query.ID
 
 	}
-	console.log(newBookmark.name);
-	console.log(newBookmark.description);
+	console.log(newBookmark);
 	data["bookmarks"].push(newBookmark);
 }
 

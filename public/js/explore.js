@@ -105,7 +105,8 @@ $(document).ready(function() {
         'dishName' : curr.dishName,
         'restaurantName' : curr.restaurantName,
         'imgURL' : curr.imgURL,
-        'address' : 'SD, CA'
+        'address' : 'SD, CA', 
+        'ID': i
       }
       console.log("BMK testing...");
       console.log('rugt place!');
@@ -119,13 +120,41 @@ $(document).ready(function() {
           'restaurantName' : curr.restaurantName,
           'imgURL' : curr.imgURL,
           'address' : curr.address,
+          'ID': i
 
         }
       );
     });
 
-$('#submitBtn').click(function() {
-  alert("Rating Sent!");
-});
+  //push new dish into your bookmarks from item page
+  $('#book_btn').click(function() {
+    //alert that dish was bookmarked
+    alert(curr.dishName + " bookmarked!");
+    var newBMK = {
+      'dishName' : curr.dishName,
+      'restaurantName' : curr.restaurantName,
+      'imgURL' : curr.imgURL,
+      'address' : 'SD, CA'
+    }
+    console.log("BMK testing...");
+    console.log('rugt place!');
+    console.log(newBMK);
 
-});
+    //store bookmarks in bookmark
+    $.get(
+      "/addBookmark",
+      {
+        'dishName' : curr.dishName,
+        'restaurantName' : curr.restaurantName,
+        'imgURL' : curr.imgURL,
+        'address' : curr.address
+      }
+    );
+  })
+
+  $('#submitBtn').click(function() {
+    alert("Rating Sent!");
+  });
+
+  });
+

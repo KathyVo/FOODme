@@ -46,7 +46,7 @@
           <a class="navbar-brand" href="/exp">FOODme</a>
 
           <!--<a href="/" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>-->
-         
+
           <a href="/upload" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
         </div>
       </div>
@@ -56,10 +56,14 @@
    <div id = "container">
     <form action="/exp">
       <h2>Upload Dish</h2>
+          <p>What did you eat?</p>
           <input type="text" name="dish" placeholder="Dish Name" id = "name">
+          <p>Where did you eat?</p>
           <input type="text" name="restaurant" placeholder="Restaurant" id = "restaurant">
+          <p>Where is it located?</p>
           <input type="text" name="location" placeholder= "Address" id = "address">
-          <p>Separate tags with commas (ex: great, yummy, tasty)</p>
+          <p>What did you like about it?</p>
+          <p id="intag">Separate tags with a space (ex: great yummy tasty)</p>
           <input type="text" name="hashtags" placeholder= "Hashtags" id = "tags">
           <!--<input type="file" id = "{{imgURL}}"accept="image/*" capture id>-->
           <button id = "snap">Snap yo' Food Pic</button>
@@ -67,7 +71,7 @@
           <div><button id = "upBtn">SUBMIT</button></div>
         </form>
 
-		
+
 
 	</div> <!--end of container-->
 
