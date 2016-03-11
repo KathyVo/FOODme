@@ -150,6 +150,11 @@ body {
     color: #5e5e5e;
 }
 
+.glyphicon .glyphicon-log-out { 
+	height: 40px;
+	width: 40px;
+}
+
 #container { 
 	height: 700px;
 }
