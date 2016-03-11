@@ -1,6 +1,6 @@
 'use strict';
 
-//function when the page loads (the "ready" event)
+//function en the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
 
